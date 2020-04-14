@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "12.16.2"
+before_install:
+  - npm install -g express
+  - npm install -g nodemon
+branches:
+  only:
+    - maser
+notifications:
+  email:
+    recipients:
+      - twicemomo@kakao.com
