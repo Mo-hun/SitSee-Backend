@@ -4,6 +4,8 @@ node_js:
 before_install:
   - npm install -g express
   - npm install -g nodemon
+  - npm install
+  - npm start
 branches:
   only:
     - maser
