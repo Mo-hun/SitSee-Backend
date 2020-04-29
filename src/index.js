@@ -16,12 +16,12 @@ import bodyParser from 'koa-bodyparser';
 
 app.use(cors());
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT;
 
 app.use(bodyParser());
 router.use('/api', api.routes());
 app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(port, () => {
-    console.log(`Yarn Backend Server Started  localhost:${port}`);
+    console.log(`SitSee Backend Server Started  localhost:${port}`);
 });
